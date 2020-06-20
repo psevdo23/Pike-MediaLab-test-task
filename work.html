@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="description"
+          content="Мы создаем контент и обеспечиваем коммуникацию с аудиторией в любой вещательной среде.
+          Сборка  и выпуск телеканалов, производство промо, создание трансляций и виртуальных мероприятий,
+           имиджевые и продающие ролики, анализ аудитории и вовлеченности зрителей.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пайк Медиа Лаб| Производство телеканалов, трансляций, телемостов и контента</title>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/jquery.animateNumber.js"></script>
+    <script src="js/jquery.spincrement.js"></script>
+    <script src="js/jquery.inputmask.min.js "></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/CSSRulePlugin.js"></script>
+    <script src="js/ScrollMagic.js"></script>
+    <script src="js/animation.gsap.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="appWrapper">
+    <div class="pop-up"><div class="section-communication"><div class="exit"><img src="./images/Shared-img/close.svg" alt=""></div>
+        <div class="container">
+            <h2 >Разработаем решение под ваши задачи <span>.</span></h2>
+            <div class="section-communication_bottom">
+                <div class="section-communication__text">Возникли вопросы или хотите оценить стоимость проекта?
+                    Оставьте заявку и наш менеджер с вами свяжется.
+                </div>
+                <form class="section-communication__form" action="">
+                    <div class="name"><input class="input" id="name1" name="name" type="text" placeholder="Ваше имя"></div>
+                    <div class="phone"><input class="input" id="phone1" name="phone" type="text"
+                                              placeholder="Телефон"></div>
+                    <div class="message"><textarea class="input" id="message1" name="message" placeholder="Сообщение"
+                                                   style="overflow: hidden; overflow-wrap: break-word; height: 53px;"></textarea>
+                    </div>
+                    <button id="button-form1" class="button__form" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div></div>
+    <nav>
+        <div class="nav__container">
+            <div class="nav__logo">
+                <div class="nav__logo_left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 47">
+                        <path fill="#00DA00" fill-rule="evenodd"
+                              d="M23.333 23.394L.01 46.718h12.465l23.324-23.324L12.474.07 0 .06z"></path>
+                    </svg>
+                </div>
+                <div class="nav__logo_animated">
+                    <div class="nav__logo_center nav__logo_center-animated ">
+                        <div class="nav__logo-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 42">
+                                <g fill-rule="evenodd">
+                                    <path d="M16.372 6.743H6.528v14.483h9.844c1.999 0 3.705-.692 5.12-2.078 1.414-1.386 2.122-3.103 2.122-5.15 0-2.045-.708-3.766-2.122-5.161-1.415-1.395-3.121-2.094-5.12-2.094zM.162.943h16.21c3.866 0 7.104 1.27 9.717 3.805 2.61 2.537 3.917 5.62 3.917 9.25s-1.306 6.71-3.917 9.237c-2.613 2.527-5.851 3.79-9.717 3.79H6.528v14.484H.163V.944zM38.553 41.508h6.365V.944h-6.365zM99.024 35.71h22.884v5.799H92.66V.944h28.683v5.799H99.024v10.72h17.68v5.8h-17.68zM85.94.944l-7.71.008L65 17.76h-2.734V.944h-6.364v40.565h6.364V24.693h2.727L78.23 41.508h7.703L69.97 21.23z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="nav__logo-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48">
+                                <path fill="#00DA00" fill-rule="evenodd" d="M.011 0v47.121l23.561-23.56z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__logo_bottom">
+                    <div class="nav__logo_bottom-animated">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 11">
+                            <g fill-rule="evenodd">
+                                <path d="M10.043.072L5.916 5.485 1.788.072H.865v9.965h1.07v-8.11l3.981 5.26 3.988-5.26v8.11h1.063V.072zM21.305.072v9.966h6.976v-.995h-5.906V5.34h4.621v-.993h-4.621V1.073h5.759V.073zM40.727 1.073h-2.063v7.97h2.063c1.167 0 2.147-.386 2.94-1.16.792-.774 1.188-1.715 1.188-2.825s-.396-2.05-1.189-2.825c-.792-.773-1.772-1.16-2.939-1.16zM37.593.072h3.134c1.45 0 2.678.489 3.683 1.467 1.005.977 1.508 2.149 1.508 3.515 0 1.367-.503 2.54-1.508 3.517-1.005.978-2.233 1.466-3.683 1.466h-3.134V.072zM55.615 10.037h1.07V.072h-1.07zM72.4 6.264l-1.918-4.698-1.924 4.698H72.4zm.431 1h-4.698l-1.139 2.773h-1.14L69.982.072h.993l4.128 9.965H73.97l-1.139-2.772zM90.465 10.037h-6.191V.072h1.07v8.97h5.12zM105.58 6.264l-1.917-4.698-1.925 4.698h3.842zm.43 1h-4.696l-1.14 2.773h-1.14l4.128-9.965h.994l4.127 9.965h-1.132l-1.14-2.772zM118.524 9.043h2.987c.598 0 1.078-.174 1.443-.52.363-.349.545-.793.545-1.335 0-.552-.184-1.02-.553-1.407-.368-.387-.847-.58-1.435-.58h-2.987v3.842zm2.771-7.97h-2.77v3.19h2.77c.534 0 .952-.145 1.255-.435.304-.289.454-.686.454-1.192 0-.463-.15-.839-.454-1.129-.303-.289-.72-.434-1.255-.434zm1.641 3.627c.046.018.105.045.174.077.068.032.198.12.39.264.19.143.355.301.5.472.142.172.274.41.391.712.118.303.178.625.178.963 0 .824-.283 1.505-.848 2.042-.565.538-1.3.807-2.21.807h-4.057V.072h3.841c.807 0 1.47.247 1.993.74.52.494.781 1.102.781 1.824 0 .292-.037.562-.11.81-.077.248-.17.446-.288.594a3.021 3.021 0 0 1-.342.38 1.34 1.34 0 0 1-.283.21l-.11.07z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__text-info">
+                Создаем телевещание в любой среде.
+                Технологические услуги по подготовке и
+                распространению для телеканалов <br>и операторов VOD
+            </div>
+            <div class="nav__button">
+                <div class="pc-button">СВЯЗАТЬСЯ С НАМИ</div>
+                <div class="mobil__button images"></div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="background-style ">
+        <header class="Header">
+            <div class="header__initial-animation_top"></div>
+            <div class="header__initial-animation_opacity"></div>
+            <video class="Header__video-background pc-version header-opacity" height="100vh" width="100vw"
+                   autoplay="auto"
+                   muted="auto" loop="auto"
+                   preload="auto" playsinline="auto" class="video1">
+                <source src="./video/Presentacia_1_hq.mp4" type="video/mp4">
+            </video>
+            <img src="./images/video-alt/1920-main-bgd.jpg" class="Header__img-background_mobile header-opacity mobile">
+            <div class="Header__container">
+                <div class="Header__logo-top images"></div>
+                <div class="Header__logo-bottom images">
+                    <div class="Header__logo-bottom_main images"></div>
+                    <div class="Header__logo-bottom_additional images"></div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="section-customers-info">
+                <div class="container">
+                    <div class="customers-info__statistics">
+                        <div id="customers-info__statistics-1" class="customers-info__statistics-box">
+                            <div id="number1" class="number">0</div>
+                            <p>Часов контента мы <br> обрабатываем ежегодно</p>
+                        </div>
+                        <div id="customers-info__statistics-2" class="customers-info__statistics-box">
+                            <div id="number2" class="number">0</div>
+                            <p>Телеканалов доверяют нам эфирную подготовку</p>
+                        </div>
+                        <div id="customers-info__statistics-3" class="customers-info__statistics-box">
+                            <div id="number3" class="number">0</div>
+                            <p>Телеканалов выпускаются в эфирном комплексе</p>
+                        </div>
+                        <div id="customers-info__statistics-4" class="customers-info__statistics-box">
+                            <div id="number4" class="number">0</div>
+                            <p>Наград МедиаБренд и Promax за работы в промо</p>
+                        </div>
+                    </div>
+                    <div class="customers-info__control">
+                        <h2>Клиенты<span>.</span></h2>
+                        <div class="control">
+                            <img id="customers-info__slider_previous" class="button-selector previous"
+                                 src="images/Shared-img/one-arrow.svg"
+                                 alt="previous">
+                            <img id="customers-info__slider_next" class="button-selector next"
+                                 src="images/Shared-img/one-arrow.svg" alt="next">
+                        </div>
+                    </div>
+                    <div class="customers-info__slider slider">
+                        <div class="slider__slide-container green-element">
+                            <div class="client-name">
+                                <h2>Телеканал «Звезда»</h2>
+                            </div>
+                            <div class="flex">
+                                <div class="client-info zvezda">
+                                    <p>Цифровой архив медиа</p>
+                                </div>
+                                <div class="client-logo">
+                                    <img src="images/Customers-info/zvezda.png" alt="Телеканал «Звезда»">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide-container">
+                            <div class="client-name">
+                                <h2>0+ Media</h2>
+                            </div>
+                            <div class="flex">
+                                <div class="client-info">
+                                    <p>Полный технологический цикл сборки телеканалов Создание промо</p>
+                                </div>
+                                <div class="client-logo null-chanel">
+                                    <img src="images/Customers-info/0.png" alt="0+ Media">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide-container green-element">
+                            <div class="client-name">
+                                <h2>Цифровое телевидение ВГТРК</h2>
+                            </div>
+                            <div class="flex">
+                                <div class="client-info">
+                                    <p>Полный технологический цикл сборки телеканалов Медиаархив <br>
+                                        Создание промо Технологический сервис Выпуск телеканалов в США</p>
+                                </div>
+                                <div class="client-logo vgtrk">
+                                    <img src="images/Customers-info/ct-vgtrk.png" alt="ВГТРК">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide-container">
+                            <div class="client-name">
+                                <h2>Компания «Первый канал. Всемирная сеть»</h2>
+                            </div>
+                            <div class="flex">
+                                <div class="client-info">
+                                    <p>Технологический сервис замены рекламных блоков</p>
+                                </div>
+                                <div class="client-logo first-chanel">
+                                    <img src="images/Customers-info/1-st.png" alt="Первый канал">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__slide-container green-element">
+                            <div class="client-name">
+                                <h2>Телекомпания Стрим</h2>
+                            </div>
+                            <div class="flex">
+                                <div class="client-info">
+                                    <p>Техническая поддержка выпуска телеканалов группы</p>
+                                </div>
+                                <div class="client-logo strim">
+                                    <img src="images/Customers-info/strim.png" alt="Телекомпания Стрим">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-information">
+                    <div class="container  ">
+                        <div class="MediaHab">
+                            <div id="MediaHab-img-1" class="images img"></div>
+                            <h2 id="MediaHab-h2-1">МедиаХаб<span>. Конструктор технологических медиауслуг</span></h2>
+                            <ul id="MediaHab-ul-1">
+                                <li>Прием контента и оценка технического качества</li>
+                                <li>Предэфирная подготовка и транскодирование контента</li>
+                                <li>Перспективное и текущее планирование эфира</li>
+                                <li>Управление рекламным трафиком</li>
+                                <li>Архивирование эфирного контента</li>
+                                <li>Отчетность для рекламодателей и правообладателей</li>
+                                <li>Подготовка пакетов контента и расписаний для VOD</li>
+                                <li>Мультиязычная локализация контента</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container ">
+                        <div class="Digital-archive">
+                            <div id="Digital-archive-img-1" class="images img"></div>
+                            <h2 id="Digital-archive-h2-1">Цифровой
+                                архив<span>. Smart архивирование и надежное хранение исходных медиа- материалов</span>
+                            </h2>
+                            <div id="Digital-archive-logo-1" class="logo">
+                                <div id="Digital-archive-pc-logo" class="pc-logo pc-version">
+                                    <div id="rotateText1" class="pc-logo_rotating"></div>
+                                    <div class="pc-logo__mini"></div>
+                                    <div class="pc-logo_hover"><p>Интеграционный проект медиаархива номинирован на
+                                        соискание
+                                        премии
+                                        Зворыкина Национальной ассоциации телевещателей</p>
+                                    </div>
+                                </div>
+                                <div class="mobil-logo mobile">
+                                    <div class="mobil-logo__img images"></div>
+                                    <div class="mobil-logo__text">Интеграционный проект медиаархива номинирован на
+                                        соискание
+                                        премии Зворыкина Национальной
+                                        ассоциации телевещателей
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="Digital-archive-ul-1">
+                                <li>Координация приема и выдачи контента</li>
+                                <li>Оценка технического качества</li>
+                                <li>Емкость библиотеки 2,5 Петабайта</li>
+                                <li>Пакетирование и цифровая доставка контента</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container ">
+                        <div class="Signal-creation">
+                            <div id="Signal-creation-img-1" class="images img"></div>
+                            <h2 id="Signal-creation-h2-1">Создание и доставка
+                                сигнала<span>. Выпуск, наземная и спутниковая доставка сигнала телеканалов</span></h2>
+                            <ul id="Signal-creation-ul-1">
+                                <li>Мониторинг 24х7х365 в эфирной аппаратной</li>
+                                <li>Эфирный комплекс в России и США</li>
+                                <li>Выпуск телеканалов, мониторинг и технический контроль 24х7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container ">
+                        <div class="Creature-promo">
+                            <div id="Creature-promo-img-1" class="images img"></div>
+                            <h2 id="Creature-promo-h2-1">Создание <br>
+                                промо<span>. Разработка фирменного стиля
+                        и промокампаний телеканалов</span></h2>
+                            <div class="logo">
+                                <div id="Creature-promo-pc-logo" class="pc-logo pc-version">
+                                    <div id="rotateText2" class="pc-logo_rotating images"></div>
+                                    <div class="pc-logo__mini images"></div>
+                                    <div class="pc-logo_hover "><p>Наши работы отмечены номинациями и премиями
+                                        Медиабренд
+                                        2016/2017/2018
+                                        и ProdaxBDA 2018</p>
+                                    </div>
+                                </div>
+                                <div class="mobil-logo mobile">
+                                    <div class="mobil-logo__img images"></div>
+                                    <div class="mobil-logo__text">Наши работы отмечены номинациями и премиями Медиабренд
+                                        2016/2017/2018
+                                        и ProdaxBDA 2018
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="Creature-promo-ul-1">
+                                <li>Создание брендбуков телеканалов и отдельных элементов оформления</li>
+                                <li>Производство монтажных и постановочных промороликов</li>
+                                <li>Производство внеэфирных промоматериалов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="http://red-is.ru" class="pml-live">
+                    <video class="pml-live__video-background pc-version" height="100vh" width="100vw" autoplay="auto"
+                           muted="auto" loop="auto"
+                           preload="auto" playsinline="auto" class="video1">
+                        <source src="./video/Presentacia_2_hq.mp4" type="video/mp4">
+                    </video>
+                    <img src="./images/video-alt/banner-bg.jpg" class="pml-live__img-background_mobile mobile">
+                    <div class="container">
+                        <div class="pml-live__logo "></div>
+                        <div class="pml-live__text-container">
+                            <div class="pml-live__text_top hide-left">Съемки<span>.</span></div>
+                            <div class="pml-live__text_center hide-left">Трансляции<span>.</span></div>
+                            <div class="pml-live__text_bottom hide-left">Монетизация<span>.</span></div>
+                        </div>
+                    </div>
+                </a>
+                <div class="section-integration">
+                    <div class="container">
+                        <div class="section-integration__content">
+                            <div class="section-integration__box_mobil">
+                                <ul>
+                                    <li>Разработка технических заданий, проектный менеджмент и аудит технологических
+                                        решений
+                                    </li>
+                                    <li>Внедрение систем менеджмента производства/управления проектами</li>
+                                    <li>Разработка технологических циклов телевизионного производства/производства
+                                        контента
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section-integration__box">
+                                <ul>
+                                    <li>Разработка технических заданий, проектный менеджмент и аудит технологических
+                                        решений
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section-integration__box">
+                                <ul>
+                                    <li>Внедрение систем менеджмента производства/управления проектами</li>
+                                </ul>
+                            </div>
+                            <div class="section-integration__box">
+                                <ul>
+                                    <li>Разработка технологических циклов телевизионного производства/производства
+                                        контента
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="section-integration__text">
+                                Интеграция
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section-experience">
+                <video class="experience__video-background pc-version" autoplay="auto" muted="auto" loop="auto"
+                       preload="auto" playsinline="auto">
+                    <source src="video/Presentacia_3_hq.mp4" type="video/mp4"/>
+                </video>
+                <img class="experience__video-background mobile" src="./images/video-alt/Integration_bg.jpg"
+                     alt="experience__video-background">
+                <div class="section-experience__container">
+                    <div class="container">
+                        <div class="customers-info__control"><h2>Наш опыт <br> интеграции<span>.</span></h2>
+                            <div class="control">
+                                <img id="experience__slider_previous" class="button-selector previous"
+                                     src="images/Shared-img/one-arrow.svg"
+                                     alt="previous">
+                                <img id="experience__slider_next" class="button-selector next"
+                                     src="images/Shared-img/one-arrow.svg" alt="next">
+                            </div>
+                        </div>
+                        <div class="experience__Slider">
+                            <div class="experience__slide green-element">
+                                <div class="slide-info">Создание эфирной аппаратной на 90 каналов</div>
+                                <div class="slide__date">/ 2018</div>
+                            </div>
+                            <div class="experience__slide ">
+                                <div class="slide-info">Создание эфирного комплекса телеканалов на технологии
+                                    IPuncompressed
+                                    SAM-Grass Valley
+                                </div>
+                                <div class="slide__date">/ 21 телеканал / 2018</div>
+                            </div>
+                            <div class="experience__slide green-element">
+                                <div class="slide-info">Разработка проекта облачного выпуска и доставки телеканала
+                                    на
+                                    территории
+                                    США
+                                </div>
+                                <div class="slide__date">/ 2017-2018</div>
+                            </div>
+                            <div class="experience__slide ">
+                                <div class="slide-info"></div>
+                                <div class="slide__date"></div>
+                            </div>
+                            <div class="experience__slide green-element">
+                                <div class="slide-info"></div>
+                                <div class="slide__date"></div>
+                            </div>
+                            <div class="experience__slide ">
+                                <div class="slide-info">
+                                </div>
+                                <div class="slide__date"></div>
+                            </div>
+                            <div class="experience__slide green-element">
+                                <div class="slide-info">
+                                </div>
+                                <div class="slide__date"></div>
+                            </div>
+                            <div class="experience__slide whiteSlide">
+                                <div class="slide-info"></div>
+                                <div class="slide__date"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section-communication">
+        <div class="container">
+            <h2 id="section-communication-h2-1">Разработаем решение под ваши задачи <span>.</span></h2>
+            <div class="section-communication_bottom">
+                <div class="section-communication__text">Возникли вопросы или хотите оценить стоимость проекта?
+                    Оставьте заявку и наш менеджер с вами свяжется.
+                </div>
+                <form class="section-communication__form" action="">
+                    <div class="name"><input class="input" id="name" name="name" type="text" placeholder="Ваше имя"></div>
+                    <div class="phone"><input class="input" id="phone" name="phone" type="text"
+                                              placeholder="Телефон"></div>
+                    <div class="message"><textarea class="input" id="message" name="message" placeholder="Сообщение"
+                                                   style="overflow: hidden; overflow-wrap: break-word; height: 53px;"></textarea>
+                    </div>
+                    <button id="button-form" class="button__form" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer__content images">
+            <div class="footer__logo"></div>
+            <div class="footer__contacts">
+                <div>+7 499 322 29 71</div>
+                <div>hello@pikemedia.ru</div>
+                <div>115162, Москва, ул. Шухова, 14</div>
+            </div>
+            <div class="footer__socials">
+                <div class="socials">
+                    <div><a href="http://red-is.ru">
+                        <svg width="28" height="16" viewBox="0 0 28 16" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.8515029,14.4497664 C27.8175981,14.376533 27.7859911,14.3158803 27.7566308,14.2672455 C27.2708324,13.3909508 26.3424847,12.315361 24.9720983,11.0401693 L24.9431975,11.010968 L24.9286961,10.9966486 L24.9140415,10.9819201 L24.8993358,10.9819201 C24.2774077,10.3881774 23.8835709,9.98887135 23.7186426,9.78446224 C23.4168185,9.39512861 23.3492642,9.00098775 23.5141926,8.60163056 C23.6307148,8.29990082 24.0684133,7.66268855 24.8262669,6.68912433 C25.2249034,6.17316649 25.5406162,5.75964334 25.7737626,5.4480946 C27.4552662,3.20915772 28.1842701,1.77844739 27.9606211,1.15540106 L27.8737656,1.00980368 C27.8154024,0.92214864 27.6647713,0.841960129 27.4220763,0.768829025 C27.1788197,0.695851342 26.8678557,0.683782153 26.4887757,0.732416894 L22.2903014,0.761464774 C22.2222876,0.737326395 22.1251688,0.739576583 21.9986386,0.768829025 C21.8722105,0.798081466 21.8090476,0.812758828 21.8090476,0.812758828 L21.7359276,0.84932438 L21.6779729,0.893254183 C21.6293624,0.922302062 21.5759011,0.973391554 21.5175379,1.04642038 C21.45943,1.1191935 21.4109217,1.20459835 21.3720639,1.30191898 C20.9150131,2.47973888 20.39531,3.57481324 19.8120354,4.58709092 C19.4524098,5.1907038 19.1221445,5.71382133 18.8205247,6.15675035 C18.5193134,6.59952594 18.2666104,6.92575203 18.0626711,7.13486608 C17.8584254,7.34418469 17.6740937,7.51187482 17.5085015,7.63855017 C17.3432668,7.76527665 17.2170429,7.8188209 17.1296769,7.79923403 C17.0421576,7.77964717 16.9596423,7.76021373 16.8816205,7.74078029 C16.7456439,7.65312525 16.6362193,7.53391643 16.5538062,7.38305157 C16.4709845,7.2321867 16.4152255,7.04230153 16.3860694,6.81354949 C16.3570665,6.58464402 16.3399099,6.38775258 16.335008,6.22221035 C16.3304635,6.05687269 16.332557,5.82300658 16.3424119,5.52127685 C16.352522,5.2193937 16.3570665,5.01513801 16.3570665,4.90804953 C16.3570665,4.53809819 16.3642662,4.13659309 16.3786655,3.70343193 C16.3934222,3.27027077 16.4053195,2.92706599 16.4152255,2.6742267 C16.4251824,2.42113172 16.4297269,2.15335936 16.4297269,1.87106307 C16.4297269,1.58876678 16.4126213,1.36737899 16.3786655,1.20669512 C16.3452203,1.04621581 16.2937503,0.890441448 16.2260429,0.739423161 C16.1578759,0.588558296 16.0581019,0.471855373 15.9271804,0.389007548 C15.7959526,0.306262005 15.6329134,0.240597433 15.438829,0.19180927 C14.9236192,0.0750552062 14.2676842,0.0118965252 13.4705644,0.00207752384 C11.6629391,-0.0173559165 10.5014449,0.0995515691 9.98633731,0.352646559 C9.78224482,0.459581621 9.59755566,0.605690407 9.43242302,0.790512653 C9.25743554,1.00474076 9.23302818,1.12164825 9.35935413,1.14087712 C9.94257768,1.22837875 10.3554603,1.43769736 10.5984616,1.76862839 L10.686032,1.94398962 C10.7541479,2.07051154 10.8221617,2.29450751 10.8902266,2.61567068 C10.9581893,2.93683385 11.0020511,3.29210782 11.0213523,3.68128804 C11.0698607,4.3919894 11.0698607,5.00035837 11.0213523,5.50644606 C10.9726908,6.01273832 10.9267355,6.40687918 10.8828737,6.68917547 C10.839012,6.97147176 10.7734491,7.20022381 10.686032,7.37538047 C10.5984616,7.55058828 10.5402005,7.65767676 10.5109934,7.69654364 C10.4818373,7.73541053 10.4575321,7.75990689 10.4382309,7.76952133 C10.3119049,7.81800265 10.1805239,7.84270357 10.0445473,7.84270357 C9.90836652,7.84270357 9.74323389,7.77448197 9.54889412,7.63814104 C9.35460542,7.50180012 9.15296387,7.31452312 8.94396948,7.07600321 C8.73497508,6.83743216 8.49927556,6.50404638 8.2367688,6.07579472 C7.97446628,5.64754307 7.70230891,5.14140423 7.42044987,4.55737821 L7.18725236,4.13383149 C7.04147201,3.8613542 6.84233247,3.46460518 6.5896295,2.9439424 C6.33677334,2.42307506 6.11327751,1.91923755 5.9189888,1.43253215 C5.84132438,1.22812304 5.72464904,1.0725021 5.56916701,0.965413615 L5.49620024,0.921483812 C5.44769189,0.882616932 5.36982322,0.841346441 5.26300273,0.797365497 C5.15602906,0.753435694 5.04440879,0.721933065 4.92768238,0.702550765 L0.933198521,0.731598644 C0.525013526,0.731598644 0.248056381,0.824214329 0.102224964,1.00919 L0.0438617602,1.09669162 C0.0147056891,1.14542864 0,1.22326468 0,1.33040431 C0,1.43749279 0.0291560711,1.56892422 0.0875192747,1.72454516 C0.670640697,3.09715973 1.30477248,4.420935 1.98991462,5.69607553 C2.67505676,6.97121606 3.27043292,7.99837566 3.77568568,8.77658266 C4.28104056,9.55545449 4.79614817,10.2904988 5.32100851,10.9814087 C5.84586885,11.6725232 6.19329075,12.1154523 6.36327422,12.3100935 C6.53346194,12.5050416 6.66714074,12.6507413 6.76431062,12.748113 L7.1288381,13.0984775 C7.36208667,13.332139 7.70460668,13.6119806 8.15655131,13.9380021 C8.60859807,14.2642282 9.10905105,14.5853402 9.65816556,14.902003 C10.2073822,15.2180521 10.8463138,15.4760055 11.5753177,15.6755562 C12.3042194,15.8752604 13.0136668,15.9553466 13.7037619,15.9167355 L15.3803126,15.9167355 C15.7203306,15.8872785 15.9779355,15.7802411 16.1530251,15.5953677 L16.2110308,15.5222366 C16.2500418,15.4641409 16.2865507,15.3738777 16.3202512,15.2524187 C16.3543602,15.1307039 16.3713126,14.9967155 16.3713126,14.8509135 C16.3613557,14.4324298 16.3931669,14.0552676 16.4658784,13.7194782 C16.5384877,13.3837911 16.6213094,13.1306961 16.7139858,12.9602444 C16.8065091,12.7899461 16.9110319,12.6461897 17.0272987,12.5297425 C17.1438209,12.4129885 17.2268467,12.342261 17.2755593,12.3178669 C17.3239656,12.2934217 17.3626191,12.276801 17.3917751,12.2667774 C17.6250237,12.1889925 17.8995299,12.2643738 18.2157022,12.4933304 C18.5316192,12.7220824 18.8279286,13.0045322 19.10509,13.3402193 C19.3820982,13.6762132 19.7148655,14.0531708 20.1035961,14.4716546 C20.4925309,14.8902918 20.8326,15.2014826 21.1240586,15.4061985 L21.4155172,15.5814063 C21.6101633,15.6983138 21.8628663,15.8054023 22.1739325,15.9027229 C22.484437,16 22.7564922,16.0243354 22.9900982,15.9757006 L26.7220242,15.9173492 C27.0910962,15.9173492 27.3783167,15.856185 27.5821028,15.734726 C27.7862464,15.6130624 27.9075172,15.4790228 27.9466303,15.3331697 C27.9856412,15.1872655 27.9877347,15.0216721 27.9540342,14.8364919 C27.9194656,14.6518742 27.8854077,14.5227441 27.8515029,14.4497664"
+                                  id="vk" fill="#FFFFFF"></path>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg width="12" height="24" viewBox="0 0 12 24" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M2.59373661,4.64804667 L2.59373661,7.95238438 L0,7.95238438 L0,11.9929414 L2.59373661,11.9929414 L2.59373661,24 L7.92182222,24 L7.92182222,11.9932762 L11.4972151,11.9932762 C11.4972151,11.9932762 11.8320662,10.05586 11.9943803,7.9374859 L7.94196949,7.9374859 L7.94196949,5.17479441 C7.94196949,4.76187775 8.52289236,4.20644903 9.09705961,4.20644903 L12,4.20644903 L12,0 L8.05298871,0 C2.46203206,-0.000278997747 2.59373661,4.04429554 2.59373661,4.64804667"
+                                  id="facebook" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg width="20" height="20" viewBox="0 0 20 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M17.646805,4.60672218 C17.3519725,4.90011649 16.9449598,5.06982497 16.5280235,5.06982497 C16.1122377,5.06982497 15.7037868,4.90011649 15.4103925,4.60672218 C15.11556,4.31188966 14.9459953,3.90358257 14.9459953,3.48779681 C14.9459953,3.07071666 15.1154161,2.66226575 15.4103925,2.36887144 C15.7039306,2.07403892 16.1122377,1.90576865 16.5280235,1.90576865 C16.9449598,1.90576865 17.3534107,2.07403892 17.646805,2.36887144 C17.9416375,2.66226575 18.1100516,3.07071666 18.1100516,3.48779681 C18.1100516,3.90343875 17.9416375,4.31188966 17.646805,4.60672218 L17.646805,4.60672218 Z M9.99985618,14.4968431 C7.52038659,14.4968431 5.50286922,12.4797572 5.50286922,10.0001438 C5.50286922,7.52038659 7.52024277,5.50315687 9.99985618,5.50315687 C12.4796134,5.50315687 14.496987,7.52038659 14.496987,10.0001438 C14.496987,12.4797572 12.4793258,14.4968431 9.99985618,14.4968431 L9.99985618,14.4968431 Z M20,15.4472106 L20,4.55264558 C20,2.04239835 17.9574578,0 15.4470668,0 L4.55235794,0 C2.04211071,0 0,2.04239835 0,4.55264558 L0,15.4472106 C0,17.9577455 2.04211071,20 4.55235794,20 L15.4472106,20 C17.9576016,20 20,17.9577455 20,15.4472106 L20,15.4472106 Z"
+                                  id="insta" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="13" height="23" viewBox="0 0 13 23">
+                            <defs>
+                                <path id="a" d="M0 .14h12.85v11.11H0z"/>
+                                <path id="c" d="M.127.127h11.82v11.835H.128z"/>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <g transform="translate(0 11)">
+                                    <mask id="b" fill="#fff">
+                                        <use xlink:href="#a"/>
+                                    </mask>
+                                    <path fill="#FFF"
+                                          d="M5.372 4.634c-1.66-.18-3.155-.608-4.436-1.656-.159-.13-.323-.256-.468-.401-.56-.563-.617-1.208-.173-1.872C.675.136 1.31-.016 1.973.31c.129.063.25.142.368.226C4.728 2.253 8.006 2.3 10.402.615c.238-.19.491-.346.785-.425.572-.153 1.105.066 1.412.59.35.597.346 1.18-.086 1.643-.662.712-1.459 1.226-2.344 1.585-.837.34-1.754.51-2.662.624.137.156.202.232.287.322 1.232 1.295 2.47 2.584 3.698 3.883.419.442.506.991.276 1.506-.252.562-.816.933-1.369.893-.35-.025-.624-.208-.866-.464-.93-.978-1.878-1.938-2.789-2.935-.265-.29-.392-.236-.626.016a191.08 191.08 0 0 1-2.843 2.985c-.43.442-.94.522-1.439.27-.53-.269-.866-.834-.84-1.402.018-.384.199-.677.45-.94C2.667 7.491 3.884 6.215 5.1 4.94c.08-.085.156-.175.273-.306"
+                                          mask="url(#b)"/>
+                                </g>
+                                <g transform="translate(1)">
+                                    <mask id="d" fill="#fff">
+                                        <use xlink:href="#c"/>
+                                    </mask>
+                                    <path fill="#FFF"
+                                          d="M8.933 6.04a2.882 2.882 0 0 0-2.891-2.89 2.887 2.887 0 0 0-2.899 2.924 2.882 2.882 0 0 0 2.914 2.868 2.876 2.876 0 0 0 2.876-2.903m-2.939 5.923C2.76 11.952.108 9.271.127 6.032.146 2.756 2.8.117 6.065.126c3.272.009 5.899 2.686 5.883 5.994-.017 3.233-2.687 5.853-5.954 5.841"
+                                          mask="url(#d)"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg width="20" height="20" viewBox="0 0 25 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M23,2.36751664 C22.1536735,2.76906439 21.2443667,3.04049605 20.2898686,3.16253695 C21.2640425,2.53767214 22.0122597,1.54822274 22.3646262,0.369150905 C21.4527589,0.947823788 20.4430069,1.36797328 19.3681184,1.5943666 C18.507417,0.613088515 17.2810073,0 15.9237853,0 C13.3178275,0 11.2051109,2.26052056 11.2051109,5.04885962 C11.2051109,5.44459131 11.2468433,5.82994064 11.3272982,6.19952414 C7.40562616,5.98889663 3.92863491,3.97885073 1.60132695,0.924078925 C1.19514415,1.66978298 0.96240437,2.53709534 0.96240437,3.46242399 C0.96240437,5.2141604 1.79543399,6.75959528 3.06159949,7.66502439 C2.28809123,7.63878007 1.56049305,7.41166575 0.924355616,7.03347833 C0.923906399,7.05453147 0.923906399,7.07568074 0.923906399,7.09697421 C0.923906399,9.54327189 2.55047939,11.5838881 4.70906112,12.0478262 C4.3131654,12.1631378 3.8962463,12.2250955 3.46589557,12.2250955 C3.16182,12.2250955 2.86623464,12.1933236 2.57806137,12.1342979 C3.17857582,14.1401139 4.92118179,15.6000865 6.98605667,15.6407027 C5.37111842,16.9950251 3.33647591,17.8021101 1.12565015,17.8021101 C0.744758311,17.8021101 0.369167248,17.7782691 0,17.7314043 C2.0882342,19.1641231 4.56859069,20 7.23335111,20 C15.9127345,20 20.6590358,12.306376 20.6590358,5.63426182 C20.6590358,5.41536687 20.654364,5.19762551 20.6453347,4.98103776 C21.5673993,4.2692206 22.3674114,3.37998991 23,2.36751664"
+                                  id="twitter" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+                            <title>05F02DBE-5141-4103-BC7D-E4F847E56D99</title>
+                            <desc>Created with sketchtool.</desc>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Section/footer" transform="translate(-1218.000000, -76.000000)"
+                                   fill="#FFFFFF">
+                                    <g id="Group" transform="translate(135.000000, 74.000000)">
+                                        <g id="Stacked-Group-4" transform="translate(797.000000, 0.000000)">
+                                            <path d="M286,2 L286,19.5062167 L291.833333,19.5062167 L291.833333,22 L295.423333,19.5062167 L301.333385,19.5062167 L306,14.7317578 L306,2 L286,2 Z M299,13 L301,13 L301,6 L299,6 L299,13 Z M294,13 L296,13 L296,6 L294,6 L294,13 Z"
+                                                  id="switch"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a></div>
+                    <div><a href="http://red-is.ru">
+                        <svg width="29" height="20" viewBox="0 0 29 20" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M18.6180935,10.6792503 L12.5338,13.7953036 C12.3977806,13.864975 12.2490387,13.8996273 12.1005774,13.8996273 C11.9323774,13.8996273 11.7644581,13.8552577 11.6158097,13.7670683 C11.3360065,13.6007737 11.1650935,13.3034785 11.1650935,12.9828984 L11.1650935,6.77068484 C11.1650935,6.45065477 11.3354452,6.15354293 11.6148742,5.9872483 C11.8943032,5.82095367 12.2417419,5.80958623 12.5316484,5.95717959 L18.6159419,9.0532482 C18.9254,9.21065056 19.1197935,9.52380516 19.1202618,9.8655617 C19.1206355,10.2075016 18.9271774,10.5210229 18.6180935,10.6792503 M27.8696548,1.71684994 C26.8227548,0.497508789 24.8901387,0 21.1990935,0 L7.80062581,0 C4.0250129,0 2.05965484,0.529594302 1.01677742,1.82777414 C0,3.09359344 0,4.95877012 0,7.54000376 L0,12.4600879 C0,17.4609359 1.2064,20 7.80062581,20 L21.1991871,20 C24.4000387,20 26.1737161,19.5610702 27.3210871,18.4848304 C28.4978323,17.3812721 29,15.5794414 29,12.4600879 L29,7.54000376 C29,4.81786888 28.9213258,2.94178313 27.8696548,1.71684994"
+                                  id="youtube" fill="#FFFFFF" mask="url(#mask-2)"></path>
+
+                        </svg>
+                    </a></div>
+                </div>
+                <div class="text__logo"><a href="http://red-is.ru">Redis</a> — создание сайта</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

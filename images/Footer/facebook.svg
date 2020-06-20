@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="24px" viewBox="0 0 12 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>455084BF-0775-42DE-9C93-EF007AFADAE4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 12 0 12 24 0 24"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section/footer" transform="translate(-998.000000, -74.000000)">
+            <g id="Group" transform="translate(135.000000, 74.000000)">
+                <g id="Stacked-Group-4" transform="translate(797.000000, 0.000000)">
+                    <g id="facebook" transform="translate(66.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M2.59373661,4.64804667 L2.59373661,7.95238438 L0,7.95238438 L0,11.9929414 L2.59373661,11.9929414 L2.59373661,24 L7.92182222,24 L7.92182222,11.9932762 L11.4972151,11.9932762 C11.4972151,11.9932762 11.8320662,10.05586 11.9943803,7.9374859 L7.94196949,7.9374859 L7.94196949,5.17479441 C7.94196949,4.76187775 8.52289236,4.20644903 9.09705961,4.20644903 L12,4.20644903 L12,0 L8.05298871,0 C2.46203206,-0.000278997747 2.59373661,4.04429554 2.59373661,4.64804667" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
